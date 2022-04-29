@@ -127,10 +127,10 @@ fun_bar 'fun_curl'
 echo ""
 #
 clear
-echo -e "\E[44;1;37m    INSTALAR O PAINELWEB SSH/DROP/SSL GESTOR-SSH     \E[0m"
+echo -e "\E[44;1;37m    INSTALAR O PAINELWEB SSH/DROP/SSL MultiHD-SSH     \E[0m"
 echo ""
 echo -e "                              \033[1;31mBy @Sr_Wallker\033[1;36m"
-echo -e "   GESTOR-SSH" | figlet
+echo -e "   MultiHD-SSH" | figlet
 echo ""
 echo -e "\033[1;31m ATENCAO \033[1;33m!!!"
 echo ""
