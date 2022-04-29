@@ -1,0 +1,6 @@
+#!/bin/bash
+clear
+varDir="bancodir"
+rm /root/$varDir/sshplus.sql > /dev/null 2>&1
+senha=$(cat /var/www/html/pages/system/pass.php |cut -d"'" -f2)
+mysqldump -u root -p$senha sshplus.sql > /root/$varDir/sshplus.sql
