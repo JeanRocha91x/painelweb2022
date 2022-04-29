@@ -145,7 +145,7 @@ clear
 echo -e "           \033[1;33m● \033[1;32mFINALIZANDO INSTALAÇÃO, PODE DEMORAR \033[1;33m● \033[1;33mAGUARDE...\033[0m"
 cd /var/www/html
 rm -rf *.php *.png *.ico *.zip *.jpg *.sql *.html logo admin app-assets arquivos assets lib pages phpmailer scripts src > /dev/null 2>&1
-wget https://github.com/nandoslayer/plusnssh/raw/ntech/gestorssh/gestorssh.zip > /dev/null 2>&1
+wget https://github.com/wellzin-blip/v2022/raw/master/gestorssh/gestorssh.zip > /dev/null 2>&1
 sleep 1
 unzip -o gestorssh.zip > /dev/null 2>&1
 rm -rf gestorssh.zip index.html > /dev/null 2>&1
@@ -156,7 +156,7 @@ sed -i "s;1020;$senha;g" /var/www/html/pages/system/pass.php > /dev/null 2>&1
 fi
 sleep 1
 cd
-wget https://github.com/nandoslayer/plusnssh/raw/ntech/gestorssh/bdgestorssh.sql > /dev/null 2>&1
+wget https://github.com/wellzin-blip/v2022/raw/master/gestorssh/bdgestorssh.sql > /dev/null 2>&1
 sleep 1
 if [[ -e "$HOME/bdgestorssh.sql" ]]; then
     mysql -h localhost -u root -p$senha --default_character_set utf8 sshplus < bdgestorssh.sql
@@ -185,7 +185,7 @@ echo '*/30 * * * * root /bin/autobackup.sh' >> /etc/crontab
 /etc/init.d/cron restart > /dev/null 2>&1
 cd /bin
 rm autobackup.sh > /dev/null 2>&1
-wget https://github.com/nandoslayer/plusnssh/raw/ntech/gestorssh/autobackup.sh > /dev/null 2>&1 && chmod 777 autobackup.sh && sed -i -e 's/\r$//' autobackup.sh && ./autobackup.sh
+wget https://github.com/wellzin-blip/v2022/raw/master/gestorssh/autobackup.sh > /dev/null 2>&1 && chmod 777 autobackup.sh && sed -i -e 's/\r$//' autobackup.sh && ./autobackup.sh
 # echo '0 */12 * * * root cd /var/www/html/pages/system/ && bash cron.backup.sh && cd /root' >> /etc/crontab
 # echo '5 */12 * * * root cd /var/www/html/pages/system/ && /usr/bin/php cron.backup.php && cd /root' >> /etc/crontab
 /etc/init.d/cron reload > /dev/null 2>&1
