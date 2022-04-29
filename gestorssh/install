@@ -203,7 +203,7 @@ clear
 IP=$(wget -qO- ipv4.icanhazip.com)
 clear
 echo -e "   PAINELWEB" | figlet
-echo -e "      GESTOR-SSH" | figlet
+echo -e "      MultiHD-SSH" | figlet
 echo -e "                 \033[1;31mBy @Sr_Wallker\033[1;36m"
 echo ""
 echo -e "\033[1;36m IP DO SEU PAINELWEB:\033[1;37m http://$IP/\033[0m"
