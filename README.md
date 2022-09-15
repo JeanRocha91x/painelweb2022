@@ -1,3 +1,5 @@
+
+⚠  VPS RECOMENDADA PARA PAINEL WEB: https://www.avirahost.com.br/aff.php?aff=108 ⚠</br>
 # ATUALIZAR PACOTES DO SISTEMA
 ```
 apt-get update -y; apt-get upgrade -y;
